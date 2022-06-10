@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ẩn và hiển thị thẻ div</title>
+    </head>
+    <body>
+        <h2>Ẩn và hiện thẻ div khi click vào button</h2>
+ 
+        <div id="content" style="border: solid 1px; padding: 20px; width: 200px; height: 50px; background-color: aquamarine;">
+            Đây là nội dung của div
+        </div>
+        <br/>
+        <input type="button" id="btn1" value="Ẩn"/>
+        <input type="button" id="btn2" value="Hiển Thị"/>
+ 
+        <script language="javascript">
+ 
+            document.getElementById("btn1").onclick = function () {
+                document.getElementById("content").style.display = 'none';
+            };
+ 
+            document.getElementById("btn2").onclick = function () {
+                document.getElementById("content").style.display = 'block';
+            };
+ 
+        </script>
+    </body>
+</html>

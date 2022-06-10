@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xóa thẻ html</title>
+    </head>
+    <body>
+        <h2>Xóa thẻ html khi click vào button</h2>
+        <div id="demo">
+        <p id="p1">Đây là mục thứ nhất - 1</p>
+        <p id="p2">Đây là mục thứ hai - 2</p>
+        <p id="p3">Đây là mục thứ ba - 3</p>
+        <p id="p4">Đây là mục thứ tư - 4</p>
+        <p id="p5">Đây là mục thứ năm - 5</p>
+        </div>
+        <input type="button" id="btn1" value="Xóa"/>
+ 
+        <script language="javascript">
+ 
+            document.getElementById("btn1").onclick = function () {
+                var parent = document.getElementById("demo");
+                var child = document.getElementById("p5");
+                parent.removeChild(child);
+            };
+ 
+ 
+        </script>
+    </body>
+</html>

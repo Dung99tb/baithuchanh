@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thêm thẻ html</title>
+    </head>
+    <body>
+        <h2>Thêm thẻ html trên (dưới) thẻ div</h2>
+ 
+        <div id="main" style="border: solid 1px; padding: 20px; width: 200px; height: 20px; background-color: chocolate;">
+            <p id="test">Đây là ví dụ thêm thẻ html</p>
+        </div>
+        <br/>
+        <p id="p1">Xin chào tôi mới thêm vào lần 1</p>
+        <p id="p2">Xin chào tôi mới thêm vào lần 2</p>
+        <script language="javascript">
+            document.body.appendChild(p2, main);
+            document.body.insertBefore(p1, main);
+ 
+        </script>
+    </body>
+</html>
